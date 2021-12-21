@@ -12,7 +12,6 @@ body {
 
 .nav a:hover {
   color: #101f27;
-  transform: ;
 }
 
 .nav a {
@@ -32,7 +31,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-weap: wrap;
+  flex-wrap: wrap;
 }
 
 .hero {
@@ -73,7 +72,6 @@ body {
 }
 
 .feature-item h2 {
-  color: ;
   font-size: 1.5rem;
   font-weight: normal;
 }
