@@ -101,6 +101,7 @@ body {
   color: #101f27;
 }
 
+/* THIS SECTION IS FOR THE BUZZ OUT ON HOVER ANIMATION - DO NOT TOUCH */
 @-webkit-keyframes buzz-out-on-hover {
   10% {
     -webkit-transform: translateX(3px) rotate(2deg);
