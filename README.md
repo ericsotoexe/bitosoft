@@ -1,2 +1,2 @@
 # bitOsoft-Webpage
-My own demo webpage for  web developer.
+My own demo webpage for web developer.
