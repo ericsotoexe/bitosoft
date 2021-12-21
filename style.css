@@ -3,6 +3,10 @@ body {
   font-family: "Nunito";
 }
 
+.align-text-center{
+  text-align: center;
+}
+
 .nav {
   list-style: none;
   margin: 0;
