@@ -9,17 +9,17 @@ Color Theme Swatches in Hex
 
 body {
   height: 100%;
-  display:flex; 
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   font-family: "Nunito";
 }
 
 .header {
-  min-height:50px;
+  min-height: 50px;
   padding: 0 100px;
-  background-color: #3C5E73;
-  color: #F2DCC9;
+  background-color: #3c5e73;
+  color: #f2dcc9;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,15 +27,15 @@ body {
 }
 
 .header a {
-  color: #F2DCC9;
+  color: #f2dcc9;
   text-decoration: none;
 }
 
 .header a:hover {
-  color: #D9BEA7;
+  color: #d9bea7;
 }
 
-.align-text-center{
+.align-text-center {
   text-align: center;
 }
 
@@ -47,11 +47,11 @@ body {
 }
 
 .nav a:hover {
-  color: #D9BEA7;
+  color: #d9bea7;
 }
 
 .nav a {
-  color: #F2DCC9;
+  color: #f2dcc9;
   text-decoration: none;
 }
 
@@ -87,7 +87,7 @@ body {
   font-weight: bold;
   color: #283040;
   text-decoration: none;
-  background-color: #7C9EA6;
+  background-color: #7c9ea6;
   padding: 10px 20px;
   border-radius: 8px;
   font-size: 1.18rem;
@@ -96,7 +96,7 @@ body {
 
 .bottom:hover {
   color: #fff;
-  background-color: #3C5E73;
+  background-color: #3c5e73;
 }
 
 .features {
@@ -115,13 +115,13 @@ body {
   grid-row-gap: 45px;
 }
 
-.feature-item{
-  background-color: #7C9EA6;
+.feature-item {
+  background-color: #7c9ea6;
   border-radius: 12px;
 }
 
 .feature-item h2 {
-  color: #FFF;
+  color: #fff;
   font-size: 1.5rem;
   font-weight: normal;
   text-align: center;
@@ -129,22 +129,21 @@ body {
 
 .feature-item p {
   padding: 10px 20px;
-  color: #FFF;
+  color: #fff;
   margin: 0;
   line-height: 1.6;
   text-align: justify;
 }
 .footer {
-  color: #F2DCC9;
+  color: #f2dcc9;
   width: 100%;
   min-height: 70px;
   margin-top: auto;
   text-align: center;
   padding: 20px 0;
   font-size: 1.2rem;
-  background-color: #3C5E73;
+  background-color: #3c5e73;
 }
-
 
 /* THIS SECTION IS FOR THE BUZZ OUT ON HOVER ANIMATION - DO NOT TOUCH */
 @-webkit-keyframes buzz-out-on-hover {
