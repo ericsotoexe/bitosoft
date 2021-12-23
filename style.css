@@ -118,6 +118,7 @@ body {
 .feature-item {
   background-color: #7c9ea6;
   border-radius: 12px;
+  box-shadow: 0px 2px 3px #283040;
 }
 
 .feature-item h2 {
