@@ -12,6 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  padding: 0;
   font-family: "Nunito";
 }
 
@@ -35,8 +36,12 @@ body {
   color: #d9bea7;
 }
 
-.align-text-center {
+.center {
   text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .nav {
@@ -105,6 +110,9 @@ body {
   background-color: rgb(255, 255, 255);
   padding: 0 45px 50px;
 }
+.features a {
+text-decoration: none;
+}
 
 .features-inner {
   max-width: 1200px;
@@ -119,6 +127,19 @@ body {
   background-color: #7c9ea6;
   border-radius: 12px;
   box-shadow: 0px 2px 3px #283040;
+  transition: 0.2s all;
+}
+
+.features-inner:hover .feature-item {
+  filter: blur(3px);
+  opacity: 0.5;
+  transform: scale(0.98);
+}
+.features-inner:hover .feature-item:hover {
+  transform: scale(1);
+  filter: blur(0px);
+  opacity: 1;
+  box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
 }
 
 .feature-item h2 {
@@ -138,10 +159,9 @@ body {
 .footer {
   color: #f2dcc9;
   width: 100%;
-  min-height: 70px;
-  margin-top: auto;
+  height: auto;
+  bottom: 0;
   text-align: center;
-  padding: 20px 0;
   font-size: 1.2rem;
   background-color: #3c5e73;
 }
