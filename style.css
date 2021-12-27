@@ -156,6 +156,29 @@ text-decoration: none;
   line-height: 1.6;
   text-align: justify;
 }
+
+.app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+}
+
+.app-slideshow {
+  flex: 1;
+  background-color: #d9bea7;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: red;
+}
+
 .footer {
   color: #f2dcc9;
   width: 100%;
