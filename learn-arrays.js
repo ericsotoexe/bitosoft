@@ -23,6 +23,8 @@ let myObjects = [
   //This is an array with objects.
   { name: "Meowphelot", species: "cat" },
   { name: "Barkphelot", species: "dog" },
-  { name: "Parrotphelot", species: "parrot" },
+  { name: "Parrotphelot", species: "parrot"},
 ];
-console.log(myObjects[2].species); //Calling an array's object's propriety.
+console.log(myObjects[2]); //Calling an array's object's propriety.
+myObjects[2].species = (myObjects[2].species) + ", bird";
+console.log(myObjects[2]); //Calling an array's object's propriety.
