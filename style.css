@@ -17,7 +17,7 @@ body {
 }
 
 .header {
-  width: 100%;
+  width: auto;
   height: auto;
   top: 0;
   padding: 0 100px;
@@ -87,7 +87,7 @@ body {
 }
 
 .div-one-inner {
-  max-width: 600px;
+  width: auto;
 }
 
 .bottom {
@@ -160,8 +160,8 @@ body {
 }
 
 .app {
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto;
   display: flex;
   flex-direction: column;
 }
