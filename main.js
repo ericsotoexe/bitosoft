@@ -1,3 +1,5 @@
+// <TO DO APP CODE>
+
 let toDoForm = document.getElementById("toDoForm");
 let toDoField = document.getElementById("toDoField");
 let toDoList = document.getElementById("toDoList");
@@ -17,6 +19,10 @@ function createToDoItem(toDoUserItem) {
 function deleteToDoItem(toDoItemToDelete) {
   toDoItemToDelete.parentElement.remove();
 }
+
+// </TO DO APP CODE>
+
+// <DOG API CODE>
 
 async function start() {
   const response = await fetch("https://dog.ceo/api/breeds/list/all");
@@ -46,3 +52,5 @@ async function loadByBreed(breed) {
     console.log(data);
   }
 }
+
+// </DOG API CODE>

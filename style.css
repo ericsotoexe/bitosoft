@@ -17,7 +17,9 @@ body {
 }
 
 .header {
-  min-height: 50px;
+  width: 100%;
+  height: auto;
+  top: 0;
   padding: 0 100px;
   background-color: #3c5e73;
   color: #f2dcc9;
@@ -111,7 +113,7 @@ body {
   padding: 0 45px 50px;
 }
 .features a {
-text-decoration: none;
+  text-decoration: none;
 }
 
 .features-inner {
@@ -161,7 +163,7 @@ text-decoration: none;
   height: 100%;
   width: 100%;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .app-slideshow {
