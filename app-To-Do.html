@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bitOsoft's Api</title>
+    <title>bitOsoft's To-Do App</title>
     <!-- Main CSS address -->
     <link rel="stylesheet" href="./style.css">
     <!-- Imported Fonts -->
@@ -27,25 +27,32 @@
             <li><a href="portafolio.html" class="buzz-out-on-hover">Portafolio</a></li>
         </ul>
     </div>
+
     <div class="div-one">
         <div class="div-one-inner">
-            <div class="app">
-                <h1>Dog API</h1>
+            <div class="toDoApp">
+                <h1>To-Do App</h1>
                 <p><b><i>Made with love and the need to get a job.</b></i>
-                    <br>This is my first API implementation, and maybe you will asking "Who let the dogs out?".
+                    <br>This is my first APP, it is supposed to be a To-Do Online App.
                 </p>
-                <div class="center" id="breed">
+                <div class="innertoDoApp">
+                    <form id="toDoForm">
+                        <input id="toDoField" type="text" autocomplete="off">
+                        <button class="bottom buzz-out-on-hover">Add to the list</button>
+                    </form>
+                    <h2>Need To Do</h2>
+                    <ul id="toDoList">
+                    </ul>
                 </div>
             </div>
-            <div class="app-slideshow" id="slide">
-            </div>
         </div>
+    </div>
     </div>
     <!-- Footer -->
     <div class="footer">
         <p>&copy; 2021 bitOsoft.</p>
     </div>
-    <script src="main.js"></script>
+    <script src="app-To-Do.js"></script>
 </body>
 
 </html>
