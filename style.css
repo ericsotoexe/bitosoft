@@ -10,8 +10,6 @@ Color Theme Swatches in Hex
 body {
   width: auto;
   height: auto;
-  display: flex;
-  flex-direction: column;
   margin: 0;
   padding: 0;
   font-family: "Nunito";
@@ -71,10 +69,13 @@ body {
   color: #fff;
   padding: 60px 45px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
 .div-one h1 {
+  text-align: left;
   font-weight: normal;
   font-size: 4rem;
   margin: 0;
@@ -86,7 +87,45 @@ body {
 }
 
 .div-one-inner {
-  width: auto;
+  flex-wrap: wrap;
+}
+
+.api {
+  display: flex;
+  flex-direction: column;
+}
+
+.api select {
+  font-size: 1rem;
+}
+
+.api-slideshow {
+  align-items: center;
+  justify-content: center;
+  background-color: #283040;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  background-color: #283040;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  opacity: 0;
+  transform: scale(1);
+  transition: all 0.9s ease-out;
+}
+
+.slide:nth-last-child(2) {
+  opacity: 1;
+  transform: scale(1.08);
 }
 
 .bottom {
@@ -116,7 +155,6 @@ body {
 }
 
 .features-inner {
-  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -145,6 +183,8 @@ body {
 
 .feature-item h2 {
   color: #fff;
+  margin: 0;
+  padding-top: 15px;
   font-size: 1.5rem;
   font-weight: normal;
   text-align: center;
@@ -158,40 +198,19 @@ body {
   text-align: justify;
 }
 
-.app {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.app select {
-  font-size: 1rem;
-}
-
-.app-slideshow {
-  flex: 1;
-  background-color: #d9bea7;
-  position: relative;
-}
-
-.slide {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: red;
-}
-
 .footer {
   color: #f2dcc9;
   width: 100%;
   height: auto;
   bottom: 0;
+  padding: 10px 0px;
   text-align: center;
   font-size: 1.2rem;
   background-color: #3c5e73;
+}
+
+.footer p {
+  margin: 0;
 }
 
 /* THIS SECTION IS FOR THE BUZZ OUT ON HOVER ANIMATION - DO NOT TOUCH */
