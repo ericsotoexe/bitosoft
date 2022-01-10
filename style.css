@@ -133,9 +133,9 @@ body {
   color: #283040;
   text-decoration: none;
   background-color: #7c9ea6;
-  padding: 10px 20px;
+  padding: 5px 10px;
   border-radius: 8px;
-  font-size: 1.18rem;
+  font-size: 1rem;
   display: inline-block;
 }
 
@@ -196,6 +196,40 @@ body {
   margin: 0;
   line-height: 1.6;
   text-align: justify;
+}
+
+.calculator-box {
+  background-color: #7c9ea6;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.calculatorGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.calculatorGrid > div {
+  border-top: 1px;
+  border-right: 1px;
+}
+
+.buttonC {
+  font-weight: bold;
+  color: #283040;
+  text-decoration: none;
+  background-color: #7c9ea6;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.buttonC:hover {
+  color: #fff;
+  background-color: #3c5e73;
 }
 
 .footer {
