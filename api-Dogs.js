@@ -1,6 +1,8 @@
 // <DOG API CODE>
 let timer;
 let deleteFirstPhotoDelay;
+let divWithApi = document.getElementById("api-slideshow-id");
+let apiSlideShow = document.getElementById("api-slideshow-id");
 
 async function start() {
   try {
@@ -30,13 +32,13 @@ function createBreedList(breedList) {
 async function loadByBreed(breed) {
   switch (breed != "Choose a dog breed") {
     case false:
-      document.getElementById("api-slideshow-id").style.height = 0;
+      divWithApi.style.height = 0;
       break;
     default:
       const response = await fetch(`https://dog.ceo/api/breed/${breed}/images`);
       const data = await response.json();
       createSlideshow(data.message);
-      document.getElementById("api-slideshow-id").style.height = "100vh";
+      apiSlideShow.style.height = "100vh";
       break;
   }
 }
@@ -47,7 +49,7 @@ function createSlideshow(images) {
   clearTimeout(deleteFirstPhotoDelay);
 
   if (images.length > 1) {
-    document.getElementById("api-slideshow-id").innerHTML = `
+    apiSlideShow.innerHTML = `
     <div class="slide"
               style="background-image: url('${images[0]}')">
           </div>
@@ -60,7 +62,7 @@ function createSlideshow(images) {
     if (images.length == 2) currentPosition = 0;
     timer = setInterval(nextSlide, 3000);
   } else {
-    document.getElementById("api-slideshow-id").innerHTML = `
+    apiSlideShow.innerHTML = `
     <div class="slide"
               style="background-image: url('${images[0]}')">
           </div>
@@ -70,7 +72,7 @@ function createSlideshow(images) {
   }
 
   function nextSlide() {
-    document.getElementById("api-slideshow-id").insertAdjacentHTML(
+    apiSlideShow.insertAdjacentHTML(
       "beforeend",
       `
     <div class="slide"
