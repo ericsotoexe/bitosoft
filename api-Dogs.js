@@ -1,8 +1,8 @@
 // <DOG API CODE>
 let timer;
 let deleteFirstPhotoDelay;
-let divWithApi = document.getElementById("api-slideshow-id");
-let apiSlideShow = document.getElementById("api-slideshow-id");
+let apiSlideShow = document.querySelector("#api-slideshow");
+let breedId = document.querySelector("#breed");
 
 async function start() {
   try {
@@ -17,7 +17,7 @@ async function start() {
 start();
 
 function createBreedList(breedList) {
-  document.getElementById("breed").innerHTML = `
+  breedId.innerHTML = `
   <select onchange="loadByBreed(this.value)">
         <option>Choose a dog breed</option>
         ${Object.keys(breedList)
@@ -32,7 +32,7 @@ function createBreedList(breedList) {
 async function loadByBreed(breed) {
   switch (breed != "Choose a dog breed") {
     case false:
-      divWithApi.style.height = 0;
+      apiSlideShow.style.height = 0;
       break;
     default:
       const response = await fetch(`https://dog.ceo/api/breed/${breed}/images`);
