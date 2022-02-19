@@ -1,11 +1,14 @@
-/*
-Color Theme Swatches in Hex
-.In-the-Karwendel-Mountains-1-hex { color: #283040; }
-.In-the-Karwendel-Mountains-2-hex { color: #3C5E73; }
-.In-the-Karwendel-Mountains-3-hex { color: #7C9EA6; }
-.In-the-Karwendel-Mountains-4-hex { color: #D9BEA7; }
-.In-the-Karwendel-Mountains-5-hex { color: #F2DCC9; }
-*/
+:root {
+  --color-bunting: #283040;
+  --color-blumine: #3c5e73;
+  --color-ziggurat: #7c9ea6;
+  --color-bone: #d9bea7;
+  --color-almond: #f2dcc9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   width: auto;
@@ -16,23 +19,23 @@ body {
 }
 
 .header {
-  top: 0;
-  padding: 0 100px;
-  background-color: #3c5e73;
-  color: #f2dcc9;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
+  top: 0;
+  padding: 0 100px;
+  background-color: var(--color-blumine);
+  color: var(--color-almond);
+  align-items: center;
 }
 
 .header a {
-  color: #f2dcc9;
+  color: var(--color-almond);
   text-decoration: none;
 }
 
 .header a:hover {
-  color: #d9bea7;
+  color: var(--color-bone);
 }
 
 .center {
@@ -47,25 +50,26 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
+  flex-wrap: wrap;
 }
 
 .nav a:hover {
-  color: #d9bea7;
+  color: var(--color-bone);
 }
 
 .nav a {
-  color: #f2dcc9;
+  color: var(--color-almond);
   text-decoration: none;
 }
 
 .nav li {
   font-weight: bold;
   margin-left: 20px;
+  display: inline;
 }
 
 .div-one {
-  background-color: #283040;
+  background-color: var(--color-bunting);
   color: #fff;
   padding: 60px 45px;
   display: flex;
@@ -102,7 +106,7 @@ body {
 .api-slideshow {
   align-items: center;
   justify-content: center;
-  background-color: #283040;
+  background-color: var(--color-bunting);
   position: relative;
   overflow: hidden;
 }
@@ -114,7 +118,7 @@ body {
   right: 0;
   left: 0;
   margin: 0;
-  background-color: #283040;
+  background-color: var(--color-bunting);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -130,9 +134,9 @@ body {
 
 .bottom {
   font-weight: bold;
-  color: #283040;
+  color: var(--color-bunting);
   text-decoration: none;
-  background-color: #7c9ea6;
+  background-color: var(--color-ziggurat);
   padding: 5px 10px;
   border-radius: 8px;
   font-size: 1rem;
@@ -141,12 +145,12 @@ body {
 
 .bottom:hover {
   color: #fff;
-  background-color: #3c5e73;
+  background-color: var(--color-blumine);
 }
 
 .features {
   font-weight: bold;
-  color: #283040;
+  color: var(--color-bunting);
   background-color: rgb(255, 255, 255);
   padding: 0 45px 50px;
 }
@@ -163,9 +167,9 @@ body {
 }
 
 .feature-item {
-  background-color: #7c9ea6;
+  background-color: var(--color-ziggurat);
   border-radius: 12px;
-  box-shadow: 0px 2px 3px #283040;
+  box-shadow: 0px 2px 3px var(--color-bunting);
   transition: 0.2s all;
 }
 
@@ -199,7 +203,7 @@ body {
 }
 
 .calculator-box {
-  background-color: #7c9ea6;
+  background-color: var(--color-ziggurat);
   text-align: center;
   margin-bottom: 15px;
 }
@@ -217,9 +221,9 @@ body {
 
 .buttonC {
   font-weight: bold;
-  color: #283040;
+  color: var(--color-bunting);
   text-decoration: none;
-  background-color: #7c9ea6;
+  background-color: var(--color-ziggurat);
   padding: 20px;
   border-radius: 20px;
   text-align: center;
@@ -229,18 +233,18 @@ body {
 
 .buttonC:hover {
   color: #fff;
-  background-color: #3c5e73;
+  background-color: var(--color-blumine);
 }
 
 .footer {
-  color: #f2dcc9;
+  color: var(--color-almond);
   width: 100%;
   height: auto;
   bottom: 0;
   padding: 10px 0px;
   text-align: center;
   font-size: 1.2rem;
-  background-color: #3c5e73;
+  background-color: var(--color-blumine);
 }
 
 .footer p {
