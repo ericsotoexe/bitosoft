@@ -4,6 +4,36 @@
   --color-ziggurat: #7c9ea6;
   --color-bone: #d9bea7;
   --color-almond: #f2dcc9;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --fs-normal: 16px;
+  --fs-huge: 42px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-bone);
 }
 
 html {
@@ -13,12 +43,10 @@ html {
 body {
   width: auto;
   height: auto;
-  margin: 0;
-  padding: 0;
   font-family: "Nunito";
 }
 
-.header {
+header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -29,13 +57,8 @@ body {
   align-items: center;
 }
 
-.header a {
+header a {
   color: var(--color-almond);
-  text-decoration: none;
-}
-
-.header a:hover {
-  color: var(--color-bone);
 }
 
 .center {
@@ -53,17 +76,7 @@ body {
   flex-wrap: wrap;
 }
 
-.nav a:hover {
-  color: var(--color-bone);
-}
-
-.nav a {
-  color: var(--color-almond);
-  text-decoration: none;
-}
-
 .nav li {
-  font-weight: bold;
   margin-left: 20px;
   display: inline;
 }
@@ -82,7 +95,6 @@ body {
   text-align: left;
   font-weight: normal;
   font-size: 4rem;
-  margin: 0;
 }
 
 .div-one p {
@@ -117,7 +129,6 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
-  margin: 0;
   background-color: var(--color-bunting);
   background-repeat: no-repeat;
   background-size: contain;
@@ -187,7 +198,6 @@ body {
 
 .feature-item h2 {
   color: #fff;
-  margin: 0;
   padding-top: 15px;
   font-size: 1.5rem;
   font-weight: normal;
@@ -197,7 +207,6 @@ body {
 .feature-item p {
   padding: 10px 20px;
   color: #fff;
-  margin: 0;
   line-height: 1.6;
   text-align: justify;
 }
@@ -245,10 +254,6 @@ body {
   text-align: center;
   font-size: 1.2rem;
   background-color: var(--color-blumine);
-}
-
-.footer p {
-  margin: 0;
 }
 
 /* THIS SECTION IS FOR THE BUZZ OUT ON HOVER ANIMATION - DO NOT TOUCH */
