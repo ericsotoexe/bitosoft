@@ -74,10 +74,12 @@ body {
 }
 
 .logo {
-  width: 100px;
+  width: 200px;
   display: inline-block;
   cursor: pointer;
-  margin: 20px 0;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 0 10px 0;
 }
 
 .logo a {
@@ -86,13 +88,18 @@ body {
 }
 
 .logo img {
-  vertical-align: middle;
+  max-width: 100%;
+}
+
+#menuList {
+  overflow: hidden;
+  transition: 0.5s;
 }
 
 .menu-icon {
   width: 25px;
   cursor: pointer;
-  display: inline-block;
+  display: none;
 }
 
 .menu-icon img {
@@ -182,7 +189,7 @@ nav ul li a:hover {
 }
 
 button {
-  width: 140px;
+  width: 200px;
   border: 0;
   padding: 12px 10px;
   outline: none;
@@ -303,6 +310,16 @@ button:hover {
   margin-top: 4px;
 }
 
+.social-links {
+  text-align: center;
+}
+
+.social-links img {
+  height: 13px;
+  margin: 20px;
+  cursor: pointer;
+}
+
 .div-one {
   background-color: var(--color-08-charcoal);
   color: var(--color-04-cultured);
@@ -376,7 +393,6 @@ button:hover {
     rgba(174, 21, 21, 1) 100%
   );
   font-weight: bold;
-
   padding: 0 45px 50px;
   overflow: hidden;
   box-sizing: border-box;
@@ -386,10 +402,6 @@ button:hover {
   font-size: var(--fs-h1);
   padding-top: 10px;
   padding-bottom: 20px;
-}
-
-.features a {
-  text-decoration: none;
 }
 
 .features-inner {
@@ -451,23 +463,6 @@ button:hover {
   border-right: 1px;
 }
 
-.buttonC {
-  font-weight: bold;
-  color: var(--color-bunting);
-  text-decoration: none;
-  background-color: var(--color-ziggurat);
-  padding: 20px;
-  border-radius: 20px;
-  text-align: center;
-  font-size: 17px;
-  cursor: pointer;
-}
-
-.buttonC:hover {
-  color: #fff;
-  background-color: var(--color-blumine);
-}
-
 .footer {
   color: var(--color-almond);
   width: 100%;
@@ -477,4 +472,55 @@ button:hover {
   text-align: center;
   font-size: 1.2rem;
   background-color: var(--color-blumine);
+}
+
+/* Let's make it responsive.
+MEDIA QUERY'S */
+
+@media screen and (max-width: 700px) {
+  nav ul {
+    width: 100%;
+    background: linear-gradient(
+      var(--color-05-fire-opal),
+      var(--color-06-carnelian)
+    );
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 2;
+  }
+
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    color: var(--color-04-cultured);
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .row {
+    flex-direction: column;
+    margin: 50px 0;
+  }
+
+  .col-1 {
+    flex-basis: 100%;
+    margin-bottom: 50px;
+  }
+
+  .col-2 {
+    flex-basis: 100%;
+  }
+  .col-2 h2 {
+    font-size: 35px;
+  }
+  .col-2 h3 {
+    font-size: 15px;
+  }
 }

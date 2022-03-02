@@ -16,18 +16,20 @@
 </head>
 
 <body>
+
   <!-- partial:index.partial.html -->
   <div class="container">
     <div class="navbar">
-      <a href="index.html"><img src="src/logo-bitOsoft-transparent.png" alt="bitOsoft" class="logo"></a>
+      <a href="index.html"><img src="src/logo-bitOsoft-entire-horizontal-2nd-transparent.png" alt="bitOsoft"
+          class="logo"></a>
       <nav>
-        <ul>
+        <ul id="menuList">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about-me.html">About me</a></li>
-          <li><a href="portafolio.html">Portafolio</a></li>
+          <li><a href="#myself">About me</a></li>
+          <li><a href="#projects">Portfolio</a></li>
         </ul>
       </nav>
-      <!-- <a href=""><img src="src/menu.png" alt="bitOsoft" class="menu-icon"></a> -->
+      <img src="src/menu.png" alt="bitOsoft" class="menu-icon" onclick="togglemenu()">
     </div>
   </div>
   <section class="main-body">
@@ -47,17 +49,25 @@
           </div>
         </div>
         <div class="col-2">
-          <h2>This is<br>my portafolio.
+          <h2>This is<br>my portfolio.
           </h2>
-          <h3>A 100% organic code, made from home.</h3>
-          <p>This is the webpage where all begin. Once I have reach a new tool, it will be like a toy for me. Prepare
-            yourself to see how this webpage turn into wine, and gets better and better, day by day.
+          <h3>100% organic code, made from home.</h3>
+          <p>With just <b>HTML & CSS</b>, this have been built with effort and
+            midnights coding.<br><em> A portfolio like the wine; it gets better and better, day by day.</em>
           </p>
-          <h4>Stay tuned!</h4>
-          <a href="bootstrap-test.html"><button type="button">See what I have done with bootstrap<img
-                src="src/arrow.png" alt="bootstrap-demo"></button></a>
-
+          <h4><b>Stay tuned!</b></h4>
+          <a href="#projects"><button type="button">See what I have done.<img src="src/arrow.png"
+                alt="Portfolio redirection"></button></a>
         </div>
+      </div>
+    </section>
+    <section id="myself">
+      <div class="social-links">
+
+        <img src="src/github.png" alt="My Github link">
+        <img src="src/ig.png" alt="My Instagram link">
+        <img src="src/linkedin.png" alt="My LinkedIn link">
+
       </div>
     </section>
     <section id="projects">
@@ -132,14 +142,22 @@
         </div>
       </div>
     </section>
-    <section id="myself">
-
-    </section>
   </section>
   <!-- Footer -->
   <div class="footer">
-    <p>&copy; 2021 bitOsoft.</p>
+    <p>&copy; 2022 bitOsoft.</p>
   </div>
+  <!--   <script>
+    var menuList = document.getElementById("menuList");
+    menuList.style.maxHeight = "0px";
+    function togglemenu() {
+      if (menuList.style.maxHeight == "0px") {
+        menuList.style.maxHeight = "130px"
+      } else {
+        menuList.style.maxHeight = "0px"
+      }
+    }
+  </script> -->
 </body>
 
 </html>
