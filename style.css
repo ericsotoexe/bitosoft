@@ -93,7 +93,7 @@ body {
 
 #menuList {
   overflow: hidden;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 .menu-icon {
@@ -129,7 +129,7 @@ nav ul li a:hover {
 }
 
 .main-body {
-  padding: 16px;
+  padding-top: 16px;
   margin-top: 30px;
 }
 
@@ -205,7 +205,6 @@ button {
 }
 
 button img {
-  filter: invert(0);
   width: 30px;
   display: none;
 }
@@ -315,7 +314,7 @@ button:hover {
 }
 
 .social-links img {
-  height: 13px;
+  height: 20px;
   margin: 20px;
   cursor: pointer;
 }
