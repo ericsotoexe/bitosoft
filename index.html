@@ -17,92 +17,114 @@
 
 <body>
   <!-- partial:index.partial.html -->
-  <header id="header">
-    <div class="logo">
-      <h1><a href="index.html" class="buzz-out-on-hover">bitOsoft</a></h1>
-    </div>
-    <div class="nav">
-      <ul>
-        <li><a href="index.html" class="buzz-out-on-hover">Home</a></li>
-        <li><a href="about-me.html" class="buzz-out-on-hover">About me</a></li>
-        <li><a href="portafolio.html" class="buzz-out-on-hover">Portafolio</a></li>
-      </ul>
-    </div>
-  </header>
-  <div class="div-one">
-    <div class="div-one-inner">
-      <h1>Welcome to my first webpage!</h1>
-      <p><b><i>A 100% organic code, made from home.</b></i>
-        <br>This is the webpage where all begin. Once I have reach a new tool, it will be like a toy for me. Prepare
-        yourself to see how this webpage turn into wine, and gets better and better, day by day. <br><b>Stay tuned!</b>
-      </p>
-      <a href="bootstrap-test.html" class="bottom buzz-out-on-hover">See what I have done with bootstrap</a>
+  <div class="container">
+    <div class="navbar">
+      <a href="index.html"><img src="src/logo-bitOsoft-transparent.png" alt="bitOsoft" class="logo"></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-me.html">About me</a></li>
+          <li><a href="portafolio.html">Portafolio</a></li>
+        </ul>
+      </nav>
+      <!-- <a href=""><img src="src/menu.png" alt="bitOsoft" class="menu-icon"></a> -->
     </div>
   </div>
-  <div class="features">
-    <h1 class="center">Mini-projects</h1>
-    <div class="features-inner">
-      <a href="api-Dogs.html">
-        <div class="feature-item">
-          <h2>Dog's Implementation's API</h2>
-          <p>And API that shows all the Stanford Dogs Dataset information.</p>
+  <section class="main-body">
+    <section id="1st">
+      <div class="row">
+        <div class="col-1">
+          <h2>This is<br>my portafolio.
+          </h2>
+          <h3>A 100% organic code, made from home.</h3>
+          <p>This is the webpage where all begin. Once I have reach a new tool, it will be like a toy for me. Prepare
+            yourself to see how this webpage turn into wine, and gets better and better, day by day.
+          </p>
+          <h4>Stay tuned!</h4>
+          <a href="bootstrap-test.html"><button type="button">See what I have done with bootstrap<img
+                src="src/arrow.png" alt="bootstrap-demo"></button></a>
         </div>
-      </a>
-      <a href="app-To-Do.html">
-        <div class="feature-item">
-          <h2>To Do Online List</h2>
-          <p>A powerful online productivity tool. Manage your to-do list, take notes, track habits, and organize ideas
-            into outlines and lists.</p>
+        <div class="col-2">
+
         </div>
-      </a>
-      <a href="tool-calculator.html">
-        <div class="feature-item">
-          <h2>Calculator</h2>
-          <p>An online basic calculator.</p>
-        </div>
-      </a>
-      <!--       <div class="feature-item">
+      </div>
+    </section>
+    <section id="projects">
+      <div class="features">
+        <h1 class="center">Mini-projects</h1>
+        <div class="features-inner">
+          <a href="api-Dogs.html">
+            <div class="feature-item">
+              <h2>Dog's Implementation's API</h2>
+              <p>And API that shows all the Stanford Dogs Dataset information.</p>
+            </div>
+          </a>
+          <a href="app-To-Do.html">
+            <div class="feature-item">
+              <h2>To Do Online List</h2>
+              <p>A powerful online productivity tool. Manage your to-do list, take notes, track habits, and organize
+                ideas
+                into outlines and lists.</p>
+            </div>
+          </a>
+          <a href="tool-calculator.html">
+            <div class="feature-item">
+              <h2>Calculator</h2>
+              <p>An online basic calculator.</p>
+            </div>
+          </a>
+          <!--       <div class="feature-item">
         <h2 a href="#">Currency Calculator</h2>
         <p>Free currency converter to calculate exchange rates for currencies and metals. Enter the values in the
           currency calculator.
         </p>
       </div> -->
-      <div class="feature-item">
-        <h2 a href="#">Case Converter</h2>
-        <p>Easily convert text between different letter cases: lower case, UPPER CASE, Sentence case, Capitalized Case,
-          aLtErNaTiNg cAsE and more online.</p>
-      </div>
-      <div class="feature-item">
-        <h2 a href="#">Snake Game</h2>
-        <p>2D video game where the player maneuvers a line which grows in length, with the line itself being a primary
-          obstacle.</p>
-      </div>
-      <div class="feature-item">
-        <h2 a href="#">Mini Cars Game</h2>
-        <p>An exciting street racing simulator, where you need not only to drive fast, but also to react quickly</p>
-      </div>
-      <div class="feature-item">
-        <h2 a href="#">Solitaire Game</h2>
-        <p>Known as Klondike, Solitaire is very fun and has everyday challenging. The first objective is to release and
-          play into position certain cards to build up each foundation, in sequence and in suit, from the ace through
-          the king.</p>
-      </div>
-      <div class="feature-item">
-        <h2 a href="#">Pomodoro Clock</h2>
-        <p>A simple Pomodoro Timer app that works on a desktop & mobile browser.</p>
-      </div>
-      <div class="feature-item">
-        <h2 a href="#">Timer / Stopwatch</h2>
-        <p>online stopwatch counts the time to the millisecond that passes after you click the "Start" button. It allows
-          you to add laps.</p>
-      </div>
-      <!--       <div class="feature-item">
+          <div class="feature-item">
+            <h2 a href="#">Case Converter</h2>
+            <p>Easily convert text between different letter cases: lower case, UPPER CASE, Sentence case, Capitalized
+              Case,
+              aLtErNaTiNg cAsE and more online.</p>
+          </div>
+          <div class="feature-item">
+            <h2 a href="#">Snake Game</h2>
+            <p>2D video game where the player maneuvers a line which grows in length, with the line itself being a
+              primary
+              obstacle.</p>
+          </div>
+          <div class="feature-item">
+            <h2 a href="#">Mini Cars Game</h2>
+            <p>An exciting street racing simulator, where you need not only to drive fast, but also to react quickly</p>
+          </div>
+          <div class="feature-item">
+            <h2 a href="#">Solitaire Game</h2>
+            <p>Known as Klondike, Solitaire is very fun and has everyday challenging. The first objective is to release
+              and
+              play into position certain cards to build up each foundation, in sequence and in suit, from the ace
+              through
+              the king.</p>
+          </div>
+          <div class="feature-item">
+            <h2 a href="#">Pomodoro Clock</h2>
+            <p>A simple Pomodoro Timer app that works on a desktop & mobile browser.</p>
+          </div>
+          <div class="feature-item">
+            <h2 a href="#">Timer / Stopwatch</h2>
+            <p>online stopwatch counts the time to the millisecond that passes after you click the "Start" button. It
+              allows
+              you to add laps.</p>
+          </div>
+          <!--       <div class="feature-item">
         <h2 a href="#">Documents to Images converter</h2>
         <p>Use this tool to convert different input formats (like documents, spreadsheets, presentations) to images such
           as jpg, png, etc...</p>
       </div> -->
-    </div>
-  </div>
+        </div>
+      </div>
+    </section>
+    <section id="myself">
+
+    </section>
+  </section>
   <!-- Footer -->
   <div class="footer">
     <p>&copy; 2021 bitOsoft.</p>

@@ -1,64 +1,51 @@
 :root {
-  --color-bunting: #283040;
-  --color-blumine: #3c5e73;
-  --color-ziggurat: #7c9ea6;
-  --color-bone: #d9bea7;
-  --color-almond: #f2dcc9;
+  --color-01-chinese-black: #121212;
+  --color-02-davys-grey: #525252;
+  --color-03-taupe-gray: #898787;
+  --color-04-cultured: #f5f5f5;
+  --color-05-fire-opal: #f05454;
+  --color-06-carnelian: #ae1515;
+  --color-07-slate-gray: #687c90;
+  --color-08-charcoal: #30475e;
+  --color-09-maastricht-blue: #0d2338;
+  --color-10-sandy-brown: #f09b54;
+  --color-11-light-brown: #ae5a15;
+  --color-12-american-green: #43c043;
+  --color-13-verse-green: #118b11;
+  --color-14-celadon-green: #329090;
+  --color-15-skobeloff: #0c6969;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --fs-normal: 16px;
-  --fs-huge: 42px;
+  --fs-h1: 42px;
+  --fs-h2: 54px;
+  --fs-h3: 30px;
+  --fs-h4: 20px;
+  --fs-p: 16px;
+  --fs-navbar: 14px;
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-li {
-  font-weight: bold;
-  margin-left: 20px;
-}
-
-ul {
-  list-style: none;
+  font-family: "Nunito";
 }
 
 a {
   text-decoration: none;
 }
 
-a:hover {
-  color: var(--color-bone);
-}
-
 html {
   scroll-behavior: smooth;
+  color: var(--color-01-chinese-black);
+  background-color: var(--color-04-cultured);
 }
 
 body {
   width: auto;
   height: auto;
-  font-family: "Nunito";
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  top: 0;
-  padding: 0 100px;
-  background-color: var(--color-blumine);
-  color: var(--color-almond);
-  align-items: center;
-}
-
-header a {
-  color: var(--color-almond);
 }
 
 .center {
@@ -69,21 +56,161 @@ header a {
   width: 50%;
 }
 
-.nav {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  flex-wrap: wrap;
+.container {
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-.nav li {
-  margin-left: 20px;
-  display: inline;
+.navbar {
+  background-color: var(--color-04-cultured);
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+}
+
+.logo {
+  width: 50px;
+  display: inline-block;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.logo a {
+  outline: none;
+  display: block;
+}
+
+.logo img {
+  vertical-align: middle;
+}
+
+.menu-icon {
+  width: 25px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.menu-icon img {
+  vertical-align: middle;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  display: block;
+  position: relative;
+  color: var(--color-01-chinese-black);
+  font-weight: bold;
+  font-size: var(--fs-navbar);
+}
+
+nav ul li a:hover {
+  color: var(--color-05-fire-opal);
+}
+
+.main-body {
+  padding: 16px;
+  margin-top: 30px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.col-1 {
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
+}
+
+.col-1 h2 {
+  font-size: var(--fs-h2);
+}
+
+.col-1 h3 {
+  font-size: var(--fs-h3);
+  color: var(--color-02-davys-grey);
+  font-weight: 100;
+  margin: 20px 0 10px;
+}
+
+.col-1 h4 {
+  font-size: var(--fs-h4);
+  font-weight: 100;
+  margin: 30px 0;
+}
+
+.col-1 p {
+  font-size: var(--fs-p);
+  font-weight: 100;
+  color: var(--color-03-taupe-gray);
+}
+
+button {
+  width: 140px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  color: var(--color-04-cultured);
+  background: linear-gradient(
+    to right,
+    var(--color-05-fire-opal),
+    var(--color-06-carnelian)
+  );
+  border-radius: 6px;
+  cursor: pointer;
+  transition: width 0.5s;
+}
+
+button img {
+  filter: invert(0);
+  width: 30px;
+  display: none;
+}
+
+button:hover img {
+  display: block;
+}
+
+button:hover {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.col-1::after {
+  content: "";
+  width: 10px;
+  height: 57%;
+  background: linear-gradient(
+    var(--color-05-fire-opal),
+    var(--color-06-carnelian)
+  );
+  position: absolute;
+  left: -40px;
+  top: 8px;
 }
 
 .div-one {
-  background-color: var(--color-bunting);
-  color: #fff;
+  background-color: var(--color-08-charcoal);
+  color: var(--color-04-cultured);
   padding: 60px 45px;
   display: flex;
   flex-direction: column;
@@ -143,28 +270,21 @@ header a {
   transform: scale(1.08);
 }
 
-.bottom {
-  font-weight: bold;
-  color: var(--color-bunting);
-  text-decoration: none;
-  background-color: var(--color-ziggurat);
-  padding: 5px 10px;
-  border-radius: 8px;
-  font-size: 1rem;
-  display: inline-block;
-}
-
-.bottom:hover {
-  color: #fff;
-  background-color: var(--color-blumine);
-}
-
 .features {
   font-weight: bold;
-  color: var(--color-bunting);
-  background-color: rgb(255, 255, 255);
+  color: var(--color-04-cultured);
+  background-color: var(--color-05-fire-opal);
   padding: 0 45px 50px;
+  overflow: hidden;
+  box-sizing: border-box;
 }
+
+.features h1 {
+  font-size: var(--fs-h1);
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
 .features a {
   text-decoration: none;
 }
@@ -178,9 +298,9 @@ header a {
 }
 
 .feature-item {
-  background-color: var(--color-ziggurat);
+  background-color: var(--color-05-fire-opal);
   border-radius: 12px;
-  box-shadow: 0px 2px 3px var(--color-bunting);
+  box-shadow: 0px 2px 3px var(--color-06-carnelian);
   transition: 0.2s all;
 }
 
@@ -254,109 +374,4 @@ header a {
   text-align: center;
   font-size: 1.2rem;
   background-color: var(--color-blumine);
-}
-
-/* THIS SECTION IS FOR THE BUZZ OUT ON HOVER ANIMATION - DO NOT TOUCH */
-@-webkit-keyframes buzz-out-on-hover {
-  10% {
-    -webkit-transform: translateX(3px) rotate(2deg);
-    transform: translateX(3px) rotate(2deg);
-  }
-  20% {
-    -webkit-transform: translateX(-3px) rotate(-2deg);
-    transform: translateX(-3px) rotate(-2deg);
-  }
-  30% {
-    -webkit-transform: translateX(3px) rotate(2deg);
-    transform: translateX(3px) rotate(2deg);
-  }
-  40% {
-    -webkit-transform: translateX(-3px) rotate(-2deg);
-    transform: translateX(-3px) rotate(-2deg);
-  }
-  50% {
-    -webkit-transform: translateX(2px) rotate(1deg);
-    transform: translateX(2px) rotate(1deg);
-  }
-  60% {
-    -webkit-transform: translateX(-2px) rotate(-1deg);
-    transform: translateX(-2px) rotate(-1deg);
-  }
-  70% {
-    -webkit-transform: translateX(2px) rotate(1deg);
-    transform: translateX(2px) rotate(1deg);
-  }
-  80% {
-    -webkit-transform: translateX(-2px) rotate(-1deg);
-    transform: translateX(-2px) rotate(-1deg);
-  }
-  90% {
-    -webkit-transform: translateX(1px) rotate(0);
-    transform: translateX(1px) rotate(0);
-  }
-  100% {
-    -webkit-transform: translateX(-1px) rotate(0);
-    transform: translateX(-1px) rotate(0);
-  }
-}
-@keyframes buzz-out-on-hover {
-  10% {
-    -webkit-transform: translateX(3px) rotate(2deg);
-    transform: translateX(3px) rotate(2deg);
-  }
-  20% {
-    -webkit-transform: translateX(-3px) rotate(-2deg);
-    transform: translateX(-3px) rotate(-2deg);
-  }
-  30% {
-    -webkit-transform: translateX(3px) rotate(2deg);
-    transform: translateX(3px) rotate(2deg);
-  }
-  40% {
-    -webkit-transform: translateX(-3px) rotate(-2deg);
-    transform: translateX(-3px) rotate(-2deg);
-  }
-  50% {
-    -webkit-transform: translateX(2px) rotate(1deg);
-    transform: translateX(2px) rotate(1deg);
-  }
-  60% {
-    -webkit-transform: translateX(-2px) rotate(-1deg);
-    transform: translateX(-2px) rotate(-1deg);
-  }
-  70% {
-    -webkit-transform: translateX(2px) rotate(1deg);
-    transform: translateX(2px) rotate(1deg);
-  }
-  80% {
-    -webkit-transform: translateX(-2px) rotate(-1deg);
-    transform: translateX(-2px) rotate(-1deg);
-  }
-  90% {
-    -webkit-transform: translateX(1px) rotate(0);
-    transform: translateX(1px) rotate(0);
-  }
-  100% {
-    -webkit-transform: translateX(-1px) rotate(0);
-    transform: translateX(-1px) rotate(0);
-  }
-}
-.buzz-out-on-hover {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.buzz-out-on-hover:hover,
-.buzz-out-on-hover:focus,
-.buzz-out-on-hover:active {
-  -webkit-animation-name: buzz-out-on-hover;
-  animation-name: buzz-out-on-hover;
-  -webkit-animation-duration: 0.75s;
-  animation-duration: 0.75s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
 }
