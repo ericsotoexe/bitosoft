@@ -41,6 +41,7 @@ html {
   scroll-behavior: smooth;
   color: var(--color-01-chinese-black);
   background-color: var(--color-04-cultured);
+  scroll-padding-top: 70px; /* height of sticky header */
 }
 
 body {
@@ -177,7 +178,7 @@ nav ul li a:hover {
 
 .col-2::after {
   content: "";
-  width: 10px;
+  width: 5px;
   height: 70%;
   background: linear-gradient(
     var(--color-05-fire-opal),
@@ -307,6 +308,74 @@ button:hover {
   font-size: 14px;
   font-style: italic;
   margin-top: 4px;
+}
+
+#myself {
+  box-sizing: border-box;
+}
+
+.card {
+  position: relative;
+  width: 50%;
+  cursor: pointer;
+}
+
+.card h1 {
+  font-weight: normal;
+  font-size: var(--fs-h1);
+}
+
+.note::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(
+    to left,
+    var(--color-05-fire-opal),
+    var(--color-06-carnelian)
+  );
+  position: absolute;
+  top: -1.8em;
+  left: 0;
+}
+
+.note {
+  font-size: var(--fs-p);
+  color: var(--color-03-taupe-gray);
+  position: relative;
+  margin-top: 50px;
+}
+
+/* Scroller styling */
+.scroller {
+  font-size: var(--fs-h4);
+  height: var(--fs-h4);
+  line-height: var(--fs-h4);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.scroller > span {
+  position: absolute;
+  animation: slide 5s infinite;
+  font-weight: bold;
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.2em;
+  }
+  50% {
+    top: -2.4em;
+  }
+  75% {
+    top: -3.6em;
+  }
 }
 
 .social-links {
