@@ -190,7 +190,7 @@ nav ul li a:hover {
 }
 
 button {
-  width: 200px;
+  width: 160px;
   border: 0;
   padding: 12px 10px;
   outline: none;
@@ -255,7 +255,7 @@ button:hover img {
 }
 
 button:hover {
-  width: 160px;
+  width: 200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
