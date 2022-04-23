@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bitOsoft's About</title>
+    <title>Online Calculator</title>
     <!-- Main CSS address -->
     <link rel="stylesheet" href="./style.css">
     <!-- Imported Fonts -->
@@ -18,48 +18,76 @@
 </head>
 
 <body>
-    <div class="header">
-        <h1><a href="index.html" class="buzz-out-on-hover">bitOsoft</a></h1>
-        <ul class="nav" }>
-            <li><a href="index.html" class="buzz-out-on-hover">Home</a></li>
-            <li><a href="about-me.html" class="buzz-out-on-hover">About me</a></li>
-            <li><a href="portafolio.html" class="buzz-out-on-hover">Portafolio</a></li>
-        </ul>
-    </div>
-    <div class="div-one">
-        <div class="div-one-inner">
-            <h1>Online Basic Calculator</h1>
-            <p>Do your maths with my technology.</p>
-            <div class="calculator-box" id="calculator-box"></div>
-            <div class="calculatorGrid">
-                <div class="buttonC" id="delete-all">C</div>
-                <div class="buttonC" id="parentesysSignal1">(</div>
-                <div class="buttonC" id="parentesysSignal2">)</div>
-                <div class="buttonC" id="divisionSignal">/</div>
-                <div class="buttonC" id="num7" onclick="">7</div>
-                <div class="buttonC" id="num8" onclick="">8</div>
-                <div class="buttonC" id="num9" onclick="">9</div>
-                <div class="buttonC" id="multplifySignal" onclick="">*</div>
-                <div class="buttonC" id="num4" onclick="">4</div>
-                <div class="buttonC" id="num5" onclick="">5</div>
-                <div class="buttonC" id="num6" onclick="">6</div>
-                <div class="buttonC" id="minusSignal" onclick="">-</div>
-                <div class="buttonC" id="num1" onclick="">1</div>
-                <div class="buttonC" id="num2" onclick="">2</div>
-                <div class="buttonC" id="num3" onclick="">3</div>
-                <div class="buttonC" id="plusSignal" onclick="">+</div>
-                <div class="buttonC" id="num0" onclick="">0</div>
-                <div class="buttonC" id="dotSignal">.</div>
-                <div class="buttonC" id="delete-one">←</div>
-                <div class="buttonC" id="equalSignal">=</div>
-            </div>
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html"><img src="src/logo-bitOsoft-entire-horizontal-2nd-transparent.png" alt="bitOsoft"
+                    class="logo"></a>
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#myself">About me</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                </ul>
+            </nav>
+            <img src="src/menu.png" alt="bitOsoft" class="menu-icon" onclick="togglemenu()">
         </div>
     </div>
-    <!-- Footer -->
-    <div class="footer">
-        <p>&copy; 2021 bitOsoft.</p>
-    </div>
-    <script src="tool-calculator.js"></script>
+
+    <section class="main-body">
+        <section id="1st">
+            <div class="row">
+                <div class="col-1">
+                    <div class="person">
+                        <div class="p-container">
+                            <div class="p-container-inner">
+                                <img class="circle" src="src/2nd-bg-variante-a.png" />
+                                <img class="img img1" src="src/3rd-bg-top.png" />
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="name">Online Calculator</div>
+                        <div class="title">And online basic calculator with JavaScript.</div>
+                    </div>
+                </div>
+
+
+                <div class="col-2">
+                    <h2>Want to <b>calculate</b> something?</h2>
+                    <h3>I got your back...</h3>
+                    <p>With my ultimate basic calculator, you will sort all your finances.</p>
+                    <h4><b>4 out of 3 people struggle with math, don't be one.</b></h4>
+                </div>
+            </div>
+            <div id="calculatorDiv" class="center">
+                <div class="calculator-box" id="calculator-box"></div>
+                <div class="calculatorGrid">
+                    <div class="buttonC" id="delete-all">C</div>
+                    <div class="buttonC" id="parentesysSignal1">(</div>
+                    <div class="buttonC" id="parentesysSignal2">)</div>
+                    <div class="buttonC" id="divisionSignal">/</div>
+                    <div class="buttonC" id="num7" onclick="">7</div>
+                    <div class="buttonC" id="num8" onclick="">8</div>
+                    <div class="buttonC" id="num9" onclick="">9</div>
+                    <div class="buttonC" id="multplifySignal" onclick="">*</div>
+                    <div class="buttonC" id="num4" onclick="">4</div>
+                    <div class="buttonC" id="num5" onclick="">5</div>
+                    <div class="buttonC" id="num6" onclick="">6</div>
+                    <div class="buttonC" id="minusSignal" onclick="">-</div>
+                    <div class="buttonC" id="num1" onclick="">1</div>
+                    <div class="buttonC" id="num2" onclick="">2</div>
+                    <div class="buttonC" id="num3" onclick="">3</div>
+                    <div class="buttonC" id="plusSignal" onclick="">+</div>
+                    <div class="buttonC" id="num0" onclick="">0</div>
+                    <div class="buttonC" id="dotSignal">.</div>
+                    <div class="buttonC" id="delete-one">←</div>
+                    <div class="buttonC" id="equalSignal">=</div>
+                </div>
+            </div>
+        </section>
+        <div class="footer">
+            <p>&copy; 2022 bitOsoft.</p>
+        </div>
+        <script src="tool-calculator.js"></script>
 </body>
 
 </html>

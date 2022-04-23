@@ -205,6 +205,38 @@ button {
   transition: width 0.5s;
 }
 
+.buttonC {
+  width: 70px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  color: var(--color-04-cultured);
+  background: linear-gradient(
+    to right,
+    var(--color-05-fire-opal),
+    var(--color-06-carnelian)
+  );
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.buttonToDo {
+  width: 30px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  color: var(--color-04-cultured);
+  background: linear-gradient(
+    to right,
+    var(--color-05-fire-opal),
+    var(--color-06-carnelian)
+  );
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
 button img {
   width: 30px;
   display: none;
@@ -214,11 +246,27 @@ button:hover img {
   display: block;
 }
 
+.buttonC:hover img {
+  display: block;
+}
+
+.buttonToDo:hover img {
+  display: block;
+}
+
 button:hover {
   width: 160px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.buttonC:hover {
+  transform: scale(1.5);
+}
+
+.buttonToDo:hover {
+  transform: scale(1.5);
 }
 
 .person {
@@ -514,16 +562,36 @@ button:hover {
   text-align: justify;
 }
 
+#calculatorDiv {
+  margin-top: -150px;
+  border-width: 6px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #f05454, #ae1515) 1;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.innertoDoApp {
+  margin-top: -150px;
+}
+
 .calculator-box {
-  background-color: var(--color-ziggurat);
+  background: linear-gradient(
+    var(--color-05-fire-opal),
+    var(--color-06-carnelian)
+  );
   text-align: center;
+  padding: 20px;
   margin-bottom: 15px;
+  color: var(--color-04-cultured);
+  font-size: var(--fs-h3);
+  border-radius: 15px;
 }
 
 .calculatorGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 30px;
 }
 
 .calculatorGrid > div {
