@@ -10,7 +10,7 @@ toDoForm.addEventListener("submit", (info) => {
 });
 
 function createToDoItem(toDoUserItem) {
-  let toDoHTML = `<li>${toDoUserItem}. <button class="bottomToDo" onclick="deleteToDoItem(this)">x</button></li>`;
+  let toDoHTML = `<li>${toDoUserItem}. <button class="bottomToDo2" onclick="deleteToDoItem(this)">x</button></li>`;
   toDoList.insertAdjacentHTML("beforeend", toDoHTML);
   toDoField.value = "";
   toDoField.focus();

@@ -222,9 +222,25 @@ button {
 }
 
 .buttonToDo {
+  width: 40px;
+  border: 0;
+  padding: 10px 8px;
+  outline: none;
+  color: var(--color-04-cultured);
+  background: linear-gradient(
+    to right,
+    var(--color-05-fire-opal),
+    var(--color-06-carnelian)
+  );
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.bottomToDo2 {
   width: 30px;
   border: 0;
-  padding: 12px 10px;
+  padding: 6px 5px;
   outline: none;
   color: var(--color-04-cultured);
   background: linear-gradient(
@@ -254,6 +270,10 @@ button:hover img {
   display: block;
 }
 
+.buttonToDo2:hover img {
+  display: block;
+}
+
 button:hover {
   width: 200px;
   display: flex;
@@ -266,7 +286,11 @@ button:hover {
 }
 
 .buttonToDo:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
+}
+
+.buttonToDo2:hover {
+  transform: scale(1.2);
 }
 
 .person {
